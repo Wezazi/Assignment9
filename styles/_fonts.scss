@@ -8,6 +8,13 @@
 @mixin mullish-italic{
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
-  font-weight: italic;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@mixin mullish-normal{
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
   font-style: normal;
 }

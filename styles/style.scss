@@ -74,8 +74,6 @@ h1{
     margin-top:144px;
     grid-gap:20px;
     grid-template-columns: 1fr 1fr 1fr;
-    width:1110px;
-
 }
 
 .gallery__column{
@@ -89,7 +87,7 @@ h1{
 }
 
 
-/*I don't need to specify width because every grid column width is equal and the three flexboxes already have equal widths*/
+/*I don't need to specify width because every grid column width is equal and the three flexboxes already have equal widths from grid-template-columns: 1fr 1fr 1fr; */
 .e1{
     height:413px;
 
@@ -137,5 +135,76 @@ h1{
 
 .e12{
     height:351px;
+}
+
+.center{
+    display:flex;
+    justify-content:center;
+
+}
+
+.group{
+    display:flex;
+    justify-content:space-between;
+    margin-top:101px;
+    width:1079px;
+    height:106px;
+
+    &__h2{
+        @include fonts.mullish-bold;
+        line-height:38px;
+        font-size:28px;
+        width:635px;
+        height:106px;
+    }
+
+    &__ul{ /* this is the same as writing a seperate .group__ul selector */
+        @include fonts.mullish-normal;
+        font-size:18px;
+        
+    }
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin-top:101px;
+}
+
+
+.awards{
+    display:flex;
+    margin-top:1px;
+    height:823px;
+    width:1110px;
+    flex-direction:column;
+    
+    &__text{
+        width:190px; 
+        height:110px;
+        margin-left:155px;
+    }
+
+    &__date{
+        margin-left:121px;
+    }
+
+    
+    &__top{
+        display:flex;
+        height:50%;
+        justify-content:space-between;
+        
+        &__right{
+           display:flex;
+           justify-content:center;
+           
+        }
+
+    }
+
+    &__bottom{
+        display:flex;
+        height:50%;
+    }
 }
 
