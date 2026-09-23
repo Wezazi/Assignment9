@@ -22,6 +22,8 @@ body{
 a{
     /* syntax for using a mixin from a connected partial: @include <partial-name>.<mixin-name>; */
     @include fonts.mullish-bold;
+    color:#111111;
+    text-decoration: none;
 }
 
 
@@ -37,7 +39,6 @@ a{
 }
 
 h3{
-    color:$blue;
     @include fonts.mullish-bold;
 }
 
@@ -83,7 +84,7 @@ h1{
 }
 
 .element{
-    background-color:blue;
+    background-color:white;
 }
 
 
@@ -181,6 +182,16 @@ hr.solid {
     &__text{
         width:190px;
         height:110px;
+        @include fonts.mullish-normal;
+        
+        &--bottom{
+            opacity:60%;
+        }
+    }
+
+    &__h2{
+        @include fonts.mullish-bold;
+
     }
 }
 
@@ -188,3 +199,8 @@ hr.solid {
     display:flex;
     justify-content: space-between
 }
+
+.date{
+    @include fonts.mullish-normal;
+}
+
