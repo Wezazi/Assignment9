@@ -1,5 +1,10 @@
+
+/* @use '<partial-name>'; automatically applies all of the css slectors and property values from the partial file in to this file. Howwever it does not automatically apply variables and mixins.*/
 @use 'header';
 @use 'fonts';
+
+$blue: #4A4FF2;
+
 
 body{
     height:100vh;
@@ -11,6 +16,36 @@ body{
 }
 
 a{
+    /* syntax for using a mixin from a connected partial: @include <partial-name>.<mixin-name>; */
     @include fonts.mullish-bold;
+}
 
+main{
+    margin-top:96px;
+}
+
+h3{
+    color:$blue;
+    @include fonts.mullish-bold;
+}
+
+h1{
+    @include fonts.mullish-bold;
+    line-height:60px;
+    height:191px;
+    width:635px;
+    font-size:40px;
+}
+
+.h1--color{
+    color:$blue;
+}
+
+.mainIntro{
+    display:flex;
+    justify-content:space-between;
+}
+
+.p{
+    align-self:flex-end;
 }
