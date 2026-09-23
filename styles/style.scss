@@ -1,3 +1,16 @@
+@use 'header';
+@use 'fonts';
+
 body{
-    background-color:red;
+    height:100vh;
+    padding-left:125px;
+    padding-right:125px;
+    padding-top:61px;
+    padding-bottom:47px;
+    box-sizing:border-box; /*To make the padding included to the total size and therefore preventing vertical scrollbar from appearing*/
+}
+
+a{
+    @include fonts.mullish-bold;
+
 }
