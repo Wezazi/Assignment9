@@ -4,3 +4,10 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@mixin mullish-italic{
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: italic;
+  font-style: normal;
+}

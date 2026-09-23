@@ -24,6 +24,11 @@ main{
     margin-top:96px;
 }
 
+.title{
+    height:251px;
+    width:635px;
+}
+
 h3{
     color:$blue;
     @include fonts.mullish-bold;
@@ -33,7 +38,6 @@ h1{
     @include fonts.mullish-bold;
     line-height:60px;
     height:191px;
-    width:635px;
     font-size:40px;
 }
 
@@ -46,6 +50,18 @@ h1{
     justify-content:space-between;
 }
 
-.p{
+.quote{
     align-self:flex-end;
+    margin-right:73px;
+    width:212px;
+    height:34px;
+    font-size:18px;
+    @include fonts.mullish-italic;
+    color:#111111;
+}
+
+.rectangle {
+  height: 2px;
+  width: 30px;
+  background-color: #111111;
 }
