@@ -25,16 +25,12 @@ a{
     height:352px;
     width:1110px;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
     grid-gap:10px; /*remove later, this is just to help me see */
 
     &__side{
         grid-row: 1 / 3;
         grid-column: 2 / 3; /* without this, it move to the first column line instead */
-    }
-    &__bottom{
-        width: 635px;
-        height:222px;
     }
 }
 
@@ -46,9 +42,10 @@ a{
 h1{
     @include fonts.mullish-bold;
     line-height:60px;
-    height:130px;
+    height:100%;
     font-size:40px;
-    width:495px;
+    width:100%;
+    line-height:55px;
 }
 
 .center{
@@ -56,7 +53,6 @@ h1{
     justify-content:center;
 
 }
-
 
 
 .bigImage{
