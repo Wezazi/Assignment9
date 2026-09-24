@@ -3,7 +3,7 @@
 @use 'header';
 @use 'fonts';
 
-/* if you remove the local repo and clone the remote one, prepos will not work even if you cloned to the same local directory. Solution: delete the old prepos project and delete the .css file from the cloneed repo. In prepos create a new project then you just need to process your main .scss file */
+/* if you remove the local repo and clone the remote one, prepos will not work even if you cloned to the same local directory. Solution: delete the old project in prepos and delete all .css files from the cloneed repo. In prepos create a new project and process all of your .scss files */
 
 
 $blue: #4A4FF2;
