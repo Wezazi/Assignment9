@@ -1,0 +1,89 @@
+@use 'header';
+@use 'fonts';
+
+
+body{
+    height:100vh;
+    padding-left:125px;
+    padding-right:125px;
+    padding-top:61px;
+    padding-bottom:47px;
+    box-sizing:border-box;
+}
+
+a{
+    @include fonts.mullish-bold;
+    color:#111111;
+    text-decoration: none;
+}
+
+.center{
+    display:flex;
+    justify-content:center;
+}
+
+header{
+    width:1110px;
+}
+
+.intro{
+    display:flex;
+    justify-content:space-between;
+    width:1110px;
+}
+
+.title{
+    margin-top:110px;
+
+    &__p{
+        width:445px;
+        height:222px;
+        
+        color:#111111;
+        @include fonts.mullish-normal;
+        font-size:16px;
+        line-height:26px;
+    }
+}
+
+h1{
+    @include fonts.mullish-bold;
+    font-size:40px;
+    line-height:55px;
+    width:475px;
+}
+
+form{
+    margin-top:131px;
+    width:475px;
+    height:291px;
+}
+
+input{
+    width:475px;
+    height:37px;
+    margin-bottom:46px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    outline:none;
+}
+
+button{
+    background-color:#4A4FF2;
+    width:125px;
+    height:50px;
+    color:white;
+    cursor:pointer;
+
+}
+
+button:hover, a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.bigImage{
+    margin-top:120px;
+    margin-bottom:120px;
+}

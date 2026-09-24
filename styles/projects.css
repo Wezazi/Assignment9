@@ -8,6 +8,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 1110px;
 }
 
 .nav__ul {
@@ -32,7 +33,6 @@ body {
 }
 
 a {
-  /* syntax for using a mixin from a connected partial: @include <partial-name>.<mixin-name>; */
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
@@ -190,12 +190,12 @@ h3 {
   display: grid;
   height: 400px;
   width: 1110px;
-  background-color: yellow;
   -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
   grid-gap: 30px;
+  margin-bottom: 132px;
 }
 
 .gallery > *:nth-child(1) {
@@ -213,6 +213,7 @@ h3 {
   -ms-grid-column: 5;
 }
 
-.element {
-  background-color: blue;
+a:hover {
+  background-color: #4CAF50;
+  color: white;
 }

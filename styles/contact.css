@@ -1,0 +1,124 @@
+.header, .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1110px;
+}
+
+.nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 29px;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  height: 100vh;
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-top: 61px;
+  padding-bottom: 47px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: #111111;
+  text-decoration: none;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  width: 1110px;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1110px;
+}
+
+.title {
+  margin-top: 110px;
+}
+.title__p {
+  width: 445px;
+  height: 222px;
+  color: #111111;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+h1 {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 55px;
+  width: 475px;
+}
+
+form {
+  margin-top: 131px;
+  width: 475px;
+  height: 291px;
+}
+
+input {
+  width: 475px;
+  height: 37px;
+  margin-bottom: 46px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+button {
+  background-color: #4A4FF2;
+  width: 125px;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover, a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.bigImage {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
