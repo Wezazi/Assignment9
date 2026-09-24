@@ -58,6 +58,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 1110px;
 }
 
 .title {
@@ -182,4 +183,36 @@ h3 {
 
 .h3--light {
   opacity: 50%;
+}
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  height: 400px;
+  width: 1110px;
+  background-color: yellow;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 30px;
+}
+
+.gallery > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.gallery > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.gallery > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.element {
+  background-color: blue;
 }

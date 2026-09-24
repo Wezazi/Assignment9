@@ -29,6 +29,7 @@ p{
 .intro{
     display:flex;
     justify-content:space-between;
+    width:1110px;
 }
 
 .title{
@@ -85,4 +86,18 @@ h3{
 
 .h3--light{
     opacity:50%
+}
+
+.gallery{
+    display:grid;
+    height:400px;
+    width:1110px;
+    background-color:yellow;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:30px;
+}
+
+.element{
+    background-color:blue;
 }
